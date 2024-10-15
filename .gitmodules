@@ -1,0 +1,6 @@
+[submodule "ShareYourCloning_backend"]
+	path = ShareYourCloning_backend
+	url = https://github.com/manulera/ShareYourCloning_backend
+[submodule "ShareYourCloning_frontend"]
+	path = ShareYourCloning_frontend
+	url = https://github.com/manulera/ShareYourCloning_frontend
