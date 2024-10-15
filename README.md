@@ -2,6 +2,12 @@
 
 This project shows how to embed ShareYourCloning in an iframe.
 
+## Requirements
+
+- nginx
+- poetry
+- yarn
+
 ## Setup
 
 Gets backend and frontend from each repo, builds frontend and install backend dependencies.
