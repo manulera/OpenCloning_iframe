@@ -16,6 +16,10 @@ Gets backend and frontend from each repo, builds frontend and install backend de
 bash setup.sh
 ```
 
+## Config
+
+You need to change the value of `root` in the `nginx.config` file to the project directory path.
+
 ## Running
 
 ```bash

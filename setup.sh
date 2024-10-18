@@ -15,7 +15,7 @@ cd ..
 mv ShareYourCloning_frontend/build/ ShareYourCloning_backend/frontend
 
 # Move config file
-mv config.json ShareYourCloning_backend/frontend/config.json
+cp config.json ShareYourCloning_backend/frontend/config.json
 
 # Install backend dependencies
 cd ShareYourCloning_backend
