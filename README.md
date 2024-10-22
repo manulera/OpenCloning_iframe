@@ -2,9 +2,16 @@
 
 This project shows how to embed ShareYourCloning in an iframe.
 
-
 ## Running with Docker
 
+The `docker-compose.yaml` contains a dummy nginx container that serves an index file (`index.html`) with an iframe to SYC, and proxies `/syc` requests to the backend container.
+
+Note the env variables set in the `docker-compose.yaml` file.
+
+- `ALLOWED_ORIGINS`: ensures that requests from the frontend are allowed by the backend.
+- `ROOT_PATH`: specifies the subpath for the backend.
+
+Also, note the `config.json` file mounted via volume. This could be moved to the env variables in the future.
 
 ## Running without Docker
 
