@@ -2,13 +2,19 @@
 
 This project shows how to embed ShareYourCloning in an iframe.
 
-## Requirements
+
+## Running with Docker
+
+
+## Running without Docker
+
+### Requirements
 
 - nginx
 - poetry
 - yarn
 
-## Setup
+### Setup
 
 Gets backend and frontend from each repo, builds frontend and install backend dependencies.
 
@@ -16,11 +22,11 @@ Gets backend and frontend from each repo, builds frontend and install backend de
 bash setup.sh
 ```
 
-## Config
+### Config
 
 You need to change the value of `root` in the `nginx.config` file to the project directory path.
 
-## Running
+### Running
 
 ```bash
 # Start nginx (in a separate terminal), uses sudo and config in nginx.config
