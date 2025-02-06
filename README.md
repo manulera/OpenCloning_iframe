@@ -1,10 +1,10 @@
-# SYC iframe
+# OpenCloning iframe
 
-This project shows how to embed ShareYourCloning in an iframe.
+This project shows how to embed OpenCloning in an iframe.
 
 ## Running with Docker
 
-The `docker-compose.yaml` contains a dummy nginx container that serves an index file (`index.html`) with an iframe to SYC, and proxies `/syc` requests to the backend container.
+The `docker-compose.yaml` contains a dummy nginx container that serves an index file (`index.html`) with an iframe to OpenCloning, and proxies `/opencloning` requests to the backend container.
 
 Note the env variables set in the `docker-compose.yaml` file.
 
@@ -40,7 +40,7 @@ You need to change the value of `root` in the `nginx.config` file to the project
 bash serve_nginx.sh
 
 # Start backend (in a separate terminal)
-bash serve_syc.sh
+bash serve_opencloning.sh
 ```
 
 Then go to `http://localhost:3000` in your browser and it should work.

@@ -1,12 +1,12 @@
 version: "3"
 
 services:
-  shareyourcloning:
+  opencloning:
     build: .
-    container_name: shareyourcloning
-    # image: manulera/shareyourcloning
+    container_name: opencloning
+    # image: manulera/opencloning
     # For eLabFTW
-    image: manulera/shareyourcloning:syc-base
+    image: manulera/opencloning:prod-oc-base
     ports:
       - "8000:8000"
 
@@ -22,15 +22,15 @@ services:
       - ALLOWED_ORIGINS=http://localhost:3000
     # If you want to use a subpath of the domain, set ROOT_PATH,
     # this is the equivalent of --root-path in uvicorn, so the routes
-    # without this prefix will also work (e.g. / will be the same as /syc/).
+    # without this prefix will also work (e.g. / will be the same as /opencloning/).
     # IMPORTANT: Do not add trailing slash, and don't use quotes.
-      - ROOT_PATH=/syc
+      - ROOT_PATH=/opencloning
   nginx:
     image: nginx:latest
     ports:
       - "3000:3000"
     depends_on:
-      - shareyourcloning
+      - opencloning
     environment:
       - NGINX_HOST=localhost
       - NGINX_PORT=3000
